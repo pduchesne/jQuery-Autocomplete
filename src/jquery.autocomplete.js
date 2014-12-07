@@ -825,7 +825,7 @@
                 $(activeItem).addClass(selected);
 
                 if ($.isFunction(onActivateCallback)) {
-                    onActivateCallback.call(activeItem);
+                    onActivateCallback.call(activeItem, that.suggestions[that.selectedIndex]);
                 }
 
                 return activeItem;
